@@ -26,7 +26,7 @@ b=random(255);
         objectDetector.detect(video,gotResult);
         for(i=0;i<objects.length; i++){
         document.getElementById("status").innerHTML="status:detecting objects";
-        document.getElementById("number_of_objects").innerHTML="number of dectected are: "+obejects.length;
+        document.getElementById("number_of_objects").innerHTML="number of dectected are: "+objects.length;
        fill(r,g,b);
        percent=floor(objects[i].confidence*100);
        text(objects[i].label+""+  percent+ "%",objects[i].x+15,objects[i].y+15);
